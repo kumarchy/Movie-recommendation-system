@@ -32,6 +32,9 @@ selected_movie_name = st.selectbox(
     (movies['title'].values)
 )
 if st.button('Recommend'):
+    
+    ##---This is for recommending the movie in single row and multiple columns----
+    
     # names,posters=recommend(selected_movie_name)
     # col1, col2, col3, col4, col5,col6,col7 = st.columns(7)
     # with col1:
@@ -57,6 +60,8 @@ if st.button('Recommend'):
     #     st.text(names[1,6])
     #     st.image(posters[1,6])
 
+    
+    ##---This is for recommending the movie in multiple row and multiple columns----
     names, posters = recommend(selected_movie_name)
 
     # Assuming each row has 3 items (adjust accordingly based on your layout)
